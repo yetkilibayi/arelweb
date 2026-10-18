@@ -1,0 +1,304 @@
+/* ==========================================================================
+   FRW TEKNOLOJİ ÜRÜN & PLATFORM TANITIM SAYFASI STİL DOSYASI (css/teknoloji.css)
+   Modül Kartları, İnteraktif Simülatör, Teknik Tablo (Dark Mode)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ÜRÜN HERO / ÖZET VURGUSU
+   -------------------------------------------------------------------------- */
+.tech-hero {
+  padding: 3.5rem 0 2.5rem;
+  background: #090e1a;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tech-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .tech-hero-grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.tech-badge-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tech-hero h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.tech-hero p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.hero-feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tech-tag {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   DETAYLI MODÜL TANITIMLARI
+   -------------------------------------------------------------------------- */
+.modules-section {
+  padding: 3.5rem 0;
+  background: #0d1527;
+}
+
+.module-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+}
+
+.module-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.module-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: var(--radius-sm);
+  color: #60a5fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.module-title-box h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.module-subtitle {
+  font-size: 0.85rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.module-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.module-bullets {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .module-bullets {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.module-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+.module-bullet-item svg {
+  color: var(--success);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   İNTERAKTİF SİMÜLATÖR
+   -------------------------------------------------------------------------- */
+.simulator-container {
+  background: #090e1a;
+  border-radius: var(--radius-md);
+  color: #f8fafc;
+  padding: 2rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--border-color);
+}
+
+.sim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sim-header h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.sim-steps-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.sim-step-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  color: #cbd5e1;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sim-step-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.sim-step-btn.active {
+  background: var(--brand-blue);
+  border-color: #38bdf8;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+.sim-display-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .sim-display-area {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.sim-info-box {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+}
+
+.sim-info-box h4 {
+  color: #38bdf8;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sim-info-box p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sim-code-preview {
+  background: #050811;
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #34d399;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+}
+
+/* --------------------------------------------------------------------------
+   TEKNİK KARŞILAŞTIRMA & ÖZELLİK LİSTESİ
+   -------------------------------------------------------------------------- */
+.specs-table-container {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.specs-table th,
+.specs-table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.specs-table th {
+  background: #090e1a;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.specs-table td {
+  color: #cbd5e1;
+}
+
+.specs-table tr:last-child td {
+  border-bottom: none;
+}
+
