@@ -150,7 +150,7 @@ function initDevToolsHelper() {
 
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  // DevTools Konsol Başlığı (Dark Stil)
+  // DevTools Konsol Başlığı (Dark Still)
   console.group(
     "%c🏢 FRW Teknoloji - Kurumsal Geliştirici & Sistem Konsolu",
     "background: #090e1a; color: #38bdf8; font-size: 13px; font-weight: bold; padding: 6px 12px; border-radius: 4px; border: 1px solid #1e293b;"

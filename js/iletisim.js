@@ -184,11 +184,11 @@ function initFaqAccordion() {
           if (otherIcon) otherIcon.textContent = "+";
         });
 
-        // Seçileni aç/kapat
+        // Seçileni açma/kapatma
         const icon = item.querySelector(".faq-icon");
         if (isHidden) {
           answer.style.display = "block";
-          if (icon) icon.textContent = "−";
+          if (icon) icon.textContent = "−"; 
         } else {
           answer.style.display = "none";
           if (icon) icon.textContent = "+";

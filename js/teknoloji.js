@@ -92,7 +92,7 @@ function initTechSimulator() {
       statsEl.textContent = data.stats;
       codeEl.textContent = JSON.stringify(data.json, null, 2);
 
-      // DevTools Konsoluna ayrıntılı bilgi gönder
+      // DevTools Konsoluna ayrıntılı bilgi gönderme
       console.group(`%c⚙️ FRW Teknoloji Simülasyonu: ${data.title}`, "color: #0284c7; font-weight: bold;");
       console.log("İşlem Ayrıntısı:", data.desc);
       console.log("Sistem İstatistiği:", data.stats);

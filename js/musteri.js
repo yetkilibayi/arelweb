@@ -106,7 +106,7 @@ function initFeedbackForm() {
       }, 5000);
     }
 
-    // DevTools Konsoluna yeni değerlendirme logu
+    // DevTools Konsoluna yeni değerlendirme log kaydı
     console.group("%c⭐ Yeni Müşteri Değerlendirmesi Eklendi", "color: #10b981; font-weight: bold;");
     console.log("Kullanıcı:", nameInput.value);
     console.log("Şirket:", companyInput.value);
